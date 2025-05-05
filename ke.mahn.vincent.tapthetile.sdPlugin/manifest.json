@@ -1,0 +1,55 @@
+{
+	"Name": "TapTheTile",
+	"Version": "1.0.0.0",
+	"Author": "Vincent Mahnke (@ViMaSter)",
+	"Actions": [
+		{
+			"Name": "Game Tile",
+			"UUID": "ke.mahn.vincent.tapthetile.gameinput",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Game tile to interact with.",
+			"PropertyInspectorPath": "ui/game-tile.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "TapTheTile",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Tap the Tile for the Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "ke.mahn.vincent.tapthetile",
+    "Profiles": [
+        {
+            "Name": "TapTheTile",
+            "DeviceType": 0,
+            "Readonly": false,
+            "DontAutoSwitchWhenInstalled": false
+        }
+    ]
+}
