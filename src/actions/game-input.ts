@@ -54,7 +54,7 @@ export class GameInput extends SingletonAction {
 		streamDeck.logger.info("IncrementCounter.length", this.actionByCoordinates.length, this.actionByCoordinates[0].length);
 		do {
 			newRandom = [Math.floor(Math.random() * (this.actionByCoordinates.length)), Math.floor(Math.random() * (this.actionByCoordinates[0].length))];
-		} while (this.currentSquare[0] === newRandom[0] && this.currentSquare[1] === newRandom[1]);
+		} while ((this.currentSquare[0] === newRandom[0] && this.currentSquare[1] === newRandom[1] || this.actionByCoordinates[newRandom[0]] === undefined || this.actionByCoordinates[newRandom[0]][newRandom[1]] === undefined));
 		this.currentSquare = newRandom;
 	}
 
